@@ -18,11 +18,9 @@ import sys
 # Configure logging to both file and console
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO,
-    handlers=[
-        logging.FileHandler("/home/ubuntu/video_bot_log.txt"),
-        logging.StreamHandler(sys.stdout)
-    ]
+    level=logging.INFO
+)
+  ]
 )
 logger = logging.getLogger(__name__)
 
@@ -36,7 +34,7 @@ PRIMARY_MODEL = 'gemini-flash-latest'
 SECONDARY_MODEL = 'gemini-2.0-flash'
 
 # Database Setup
-DB_PATH = "/home/ubuntu/bot_history.db"
+DB_PATH = "bot_history.db
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
