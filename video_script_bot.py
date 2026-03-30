@@ -34,7 +34,7 @@ PRIMARY_MODEL = 'gemini-flash-latest'
 SECONDARY_MODEL = 'gemini-2.0-flash'
 
 # Database Setup
-DB_PATH = "bot_history.db
+DB_PATH = "bot_history.db"
 
 def init_db():
     conn = sqlite3.connect(DB_PATH)
