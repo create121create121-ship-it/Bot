@@ -23,8 +23,8 @@ logging.basicConfig(
   ]
 )
 logger = logging.getLogger(__name__)
+
 # api key
-import os
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
