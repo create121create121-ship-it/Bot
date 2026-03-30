@@ -25,8 +25,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # API Keys
-TELEGRAM_TOKEN = "8609711640:AAEUAf56tu6zUboDcpgvcsa7q2kD2vjDFKE"
-GEMINI_API_KEY = "AIzaSyCx158bADJcj3Csl6LfidyUsR_jejBbowg"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # Configure Gemini AI
 genai.configure(api_key=GEMINI_API_KEY)
