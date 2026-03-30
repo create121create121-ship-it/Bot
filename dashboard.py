@@ -1,10 +1,8 @@
 from flask import Flask, render_template_string, redirect, url_for, request
 import sqlite3
 
-DATABASE = 'bot_history.db'
-
 app = Flask(__name__)
-DB_PATH = "/home/ubuntu/bot_history.db"
+DATABASE = 'bot_history.db'
 
 HTML_TEMPLATE = '''
 <!DOCTYPE html>
